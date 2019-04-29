@@ -31,6 +31,7 @@ class MaterialPalette {
   static Palette get purple => const MaterialPurple();
   static Palette get cyan => const MaterialCyan();
   static Palette get deepOrange => const MaterialDeepOrange();
+  static Palette get orange => const MaterialOrange();
   static Palette get lime => const MaterialLime();
   static Palette get indigo => const MaterialIndigo();
   static Palette get pink => const MaterialPink();
@@ -143,6 +144,18 @@ class MaterialCyan extends Palette {
       r: 0x00, g: 0xBC, b: 0xD4, darker: _shade700, lighter: _shade200);
 
   const MaterialCyan();
+
+  @override
+  Color get shadeDefault => _shade500;
+}
+
+class MaterialOrange extends Palette {
+  static const _shade200 = const Color(r: 0xFF, g: 0xbf, b: 0x4c);
+  static const _shade700 = const Color(r: 0xc8, g: 0x81, b: 0x00);
+  static const _shade500 = const Color(
+    r: 0xFF, g: 0xA5, b: 0x00, darker: _shade700, lighter: _shade200);
+
+  const MaterialDeepOrange();
 
   @override
   Color get shadeDefault => _shade500;
