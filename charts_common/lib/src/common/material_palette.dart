@@ -155,7 +155,7 @@ class MaterialOrange extends Palette {
   static const _shade500 = const Color(
     r: 0xFF, g: 0xA5, b: 0x00, darker: _shade700, lighter: _shade200);
 
-  const MaterialDeepOrange();
+  const MaterialOrange();
 
   @override
   Color get shadeDefault => _shade500;
